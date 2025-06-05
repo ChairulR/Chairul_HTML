@@ -24,7 +24,7 @@
                        <a class="nav-link" href="proses_hapus.php">Hapus Buku</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="tambah_pelanggan.php">Pelanggan</a>
+                       <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
                </ul>
            </div>
        </div>
