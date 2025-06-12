@@ -44,10 +44,18 @@ $row = $result->fetch_assoc();
            </div>
            <div class="mb-3">
                <label for="stok" class="form-label">Stok</label>
-               <input type="number" class="form-control" id="stok" name="stok" value="<?= $row['stok'] ?>" required>
+               <input type="number" class="form-control" id="stok" name="stok" value="<?= $row['Stok'] ?>" required>
            </div>
            <button type="submit" class="btn btn-success">Simpan Perubahan</button>
        </form>
    </div>
 </body>
 </html>
+
+<?php
+       session_start();
+       if (!isset($_SESSION['login_Un51k4'])) {
+            header("Location: login.php?message=" . urlencode("Mengakses fitur harus login dulu bro."));
+           exit;
+       }
+   ?>

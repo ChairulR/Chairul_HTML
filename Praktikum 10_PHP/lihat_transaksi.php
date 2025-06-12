@@ -50,3 +50,11 @@ $result = $conn->query($query);
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<?php
+       session_start();
+       if (!isset($_SESSION['login_Un51k4'])) {
+            header("Location: login.php?message=" . urlencode("Mengakses fitur harus login dulu bro."));
+           exit;
+       }
+   ?>
